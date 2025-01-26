@@ -1,84 +1,70 @@
-# Turborepo starter
+# Waseet - Fintech Platform
 
-This Turborepo starter is maintained by the Turborepo core team.
+Waseet is a comprehensive fintech project designed to streamline payment processing and banking integrations. It consists of multiple parts to cater to different user needs:
 
-## Using this example
+- **Waseet Pay**: A payment processor for merchants and businesses.
+- **Waseet Link**: A platform that links users from different banks for seamless money exchange.
 
-Run the following command:
+This project is structured as a monorepo, containing the following apps and packages:
 
-```sh
-npx create-turbo@latest
-```
-
-## What's inside?
-
-This Turborepo includes the following packages/apps:
+## Monorepo Structure
 
 ### Apps and Packages
 
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `@repo/ui`: a stub React component library shared by both `web` and `docs` applications
-- `@repo/eslint-config`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `@repo/typescript-config`: `tsconfig.json`s used throughout the monorepo
+- `api`: A RESTful API supporting multiple projects with real-time updates and Server-Sent Events (SSE).
+- `web`: A [Next.js](https://nextjs.org/) application that includes a landing page and dashboard for the payment processor.
+- `link`: A platform enabling users to exchange money between banks seamlessly.
+- `sdk`: A lightweight JavaScript/TypeScript SDK for integrating Waseet Pay into business systems.
+- `docs`: Comprehensive documentation for all Waseet apps and packages.
+- `blog`: A blog platform for updates, how-to guides, and tutorials.
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+Each package/app is built with [TypeScript](https://www.typescriptlang.org/) for consistency, type safety, and maintainability.
 
-### Utilities
+## Utilities
 
-This Turborepo has some additional tools already setup for you:
+This project comes pre-configured with:
 
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
+- [TypeScript](https://www.typescriptlang.org/) for static type checking.
+- [ESLint](https://eslint.org/) for code linting.
+- [Prettier](https://prettier.io) for code formatting.
 
-### Build
+## Build
 
 To build all apps and packages, run the following command:
 
-```
-cd my-turborepo
+```sh
 pnpm build
 ```
 
-### Develop
+## Develop
 
 To develop all apps and packages, run the following command:
 
-```
-cd my-turborepo
+```sh
 pnpm dev
 ```
 
-### Remote Caching
+This command starts the development servers for all applications, enabling seamless development across the monorepo.
 
-> [!TIP]
-> Vercel Remote Cache is free for all plans. Get started today at [vercel.com](https://vercel.com/signup?/signup?utm_source=remote-cache-sdk&utm_campaign=free_remote_cache).
+## Features
 
-Turborepo can use a technique known as [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
-
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup?utm_source=turborepo-examples), then enter the following commands:
-
-```
-cd my-turborepo
-npx turbo login
-```
-
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
-
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
-
-```
-npx turbo link
-```
+- **Waseet Pay**: A robust payment processor for merchants and businesses.
+- **Waseet Link**: A platform connecting users across different banks for money exchange.
+- **SDK**: Simplifies integration for businesses.
+- **Documentation**: Guides and resources for all applications.
+- **Blog**: Updates, tutorials, and how-to guides.
+- **High Performance**: Built using Turborepo for optimized development and deployment.
 
 ## Useful Links
 
-Learn more about the power of Turborepo:
+Learn more about the tools and concepts used in Waseet:
 
-- [Tasks](https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks)
-- [Caching](https://turbo.build/repo/docs/core-concepts/caching)
-- [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching)
-- [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
-- [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
-- [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
+- [Turborepo](https://turbo.build/repo/docs)
+- [Next.js](https://nextjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [ESLint](https://eslint.org/)
+- [Prettier](https://prettier.io/)
+
+---
+
+For questions or support, feel free to reach out!
